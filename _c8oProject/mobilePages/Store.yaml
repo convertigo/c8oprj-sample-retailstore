@@ -17,16 +17,16 @@ scriptContent:
         '
 segment: Store
 title: Title for Store
-↓Header [mobile.components.UIDynamicElement-1513868393337]: 
+↓Header [ngx.components.UIDynamicElement-1513868393337]: 
   beanData: '{"ionBean":"Header"}'
   tagName: ion-header
-  ↓ToolBar [mobile.components.UIDynamicElement-1513868393350]: 
+  ↓ToolBar [ngx.components.UIDynamicElement-1513868393350]: 
     beanData: '{"ionBean":"ToolBar"}'
     tagName: ion-toolbar
-    ↓ButtonSet [mobile.components.UIDynamicElement-1513952228529]: 
-      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:left"}'
+    ↓ButtonSet [ngx.components.UIDynamicElement-1513952228529]: 
+      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:start"}'
       tagName: ion-buttons
-      ↓Image [mobile.components.UIDynamicElement-1513952228549]: 
+      ↓Image [ngx.components.UIDynamicElement-1513952228549]: 
         beanData: |
           '{
            "ionBean": "Image",
@@ -35,32 +35,34 @@ title: Title for Store
           }'
         selfClose: true
         tagName: img
-    ↓BarTitle [mobile.components.UIDynamicElement-1513868393363]: 
+    ↓BarTitle [ngx.components.UIDynamicElement-1513868393363]: 
       beanData: '{"ionBean":"BarTitle"}'
       tagName: ion-title
-      ↓Text [mobile.components.UIText-1513868393391]: 
+      ↓Text [ngx.components.UIText-1513868393391]: 
+        i18n: true
         textValue: 
           - xmlizable: 
-            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
             - MobileSmartSourceType: plain:STORE
-↓Content [mobile.components.UIDynamicElement-1513868393403]: 
+↓Content [ngx.components.UIDynamicElement-1513868393403]: 
   beanData: '{"ionBean":"Content"}'
   tagName: ion-content
-  ↓Directive [mobile.components.UIControlDirective-1513954909887]: 
+  ↓Directive [ngx.components.UIControlDirective-1513954909887]: 
     directiveSource: 
       - xmlizable: 
-        - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+        - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
         - MobileSmartSourceType: script:this.steps
-    ↓Button [mobile.components.UIDynamicElement-1513955591801]: 
+    ↓Button [ngx.components.UIDynamicElement-1513955591801]: 
       beanData: '{"ionBean":"Button","ButtonFormType":"plain:false"}'
-      tagName: button
-      ↓Text [mobile.components.UIText-1513954964900]: 
+      tagName: ion-button
+      ↓Text [ngx.components.UIText-1513954964900]: 
+        i18n: true
         textValue: 
           - xmlizable: 
-            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
             - MobileSmartSourceType: source:{"filter":"Iteration","project":"sampleMobileRetailStore","input":"item1513954909887.name"}
-      ↓Event [mobile.components.UIControlEvent-1513956789370]: 
-        ↓CustomAction [mobile.components.UICustomAction-1513956804737]: 
+      ↓Event [ngx.components.UIControlEvent-1513956789370]: 
+        ↓CustomAction [ngx.components.UICustomAction-1513956804737]: 
           actionValue: 
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
@@ -74,7 +76,7 @@ title: Title for Store
                   		}
                   		resolve();
                   
-          ↓QueryView1 [mobile.components.UIDynamicAction-1513957082201]: 
+          ↓QueryView1 [ngx.components.UIDynamicAction-1513957082201]: 
             beanData: |
               '{
                "ionBean": "FullSyncViewAction",
@@ -84,44 +86,44 @@ title: Title for Store
                "endkey": "script:[\"42\", c8oPage.step.id, ''~~'']",
                "limit": "script:20"
               }'
-          ↓id [mobile.components.UIControlVariable-1513957095513]: 
+          ↓id [ngx.components.UIControlVariable-1513957095513]: 
             varValue: 
               - xmlizable: 
-                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
                 - MobileSmartSourceType: source:{"filter":"Iteration","project":"sampleMobileRetailStore","input":"item1513954909887.id"}
-  ↓Grid [mobile.components.UIDynamicElement-1513949910628]: 
+  ↓Grid [ngx.components.UIDynamicElement-1513949910628]: 
     beanData: '{"ionBean":"Grid"}'
     tagName: ion-grid
-    ↓GridRow [mobile.components.UIDynamicElement-1513949910654]: 
+    ↓GridRow [ngx.components.UIDynamicElement-1513949910654]: 
       beanData: '{"ionBean":"GridRow"}'
       tagName: ion-row
-      ↓Directive [mobile.components.UIControlDirective-1513949910675]: 
+      ↓Directive [ngx.components.UIControlDirective-1513949910675]: 
         directiveSource: 
           - xmlizable: 
-            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
             - MobileSmartSourceType: source:{"filter":"Database","project":"sampleMobileRetailStore","input":"listen(['fs:\/\/retaildb.view#store, {ddoc='design', view='children_byFather', include_docs='false'}'])?.rows"}
-        ↓GridCol [mobile.components.UIDynamicElement-1513949910697]: 
+        ↓GridCol [ngx.components.UIDynamicElement-1513949910697]: 
           beanData: |
             '{
              "ionBean": "GridCol",
-             "Columns": "plain:6",
-             "ColumnsSmall": "plain:3"
+             "Size": "plain:6",
+             "SizeSm": "plain:3"
             }'
           tagName: ion-col
-          ↓CardContainer [mobile.components.UIDynamicElement-1513949910723]: 
+          ↓CardContainer [ngx.components.UIDynamicElement-1513949910723]: 
             beanData: '{"ionBean":"Card"}'
             tagName: ion-card
-            ↓Event [mobile.components.UIControlEvent-1513871977888]: 
-              ↓If_article [mobile.components.UIDynamicAction-1513874758648]: 
+            ↓Event [ngx.components.UIControlEvent-1513871977888]: 
+              ↓If_article [ngx.components.UIDynamicAction-1513874758648]: 
                 beanData: '{"ionBean":"IfAction","condition":"source:{\"filter\":\"Iteration\",\"project\":\"sampleMobileRetailStore\",\"input\":\"item1513949910675?.value?.sku\"}"}'
-                ↓PushPage [mobile.components.UIDynamicAction-1513875152349]: 
+                ↓PushPage [ngx.components.UIDynamicAction-1513875152349]: 
                   beanData: |
                     '{
                      "ionBean": "PushPageAction",
                      "page": "plain:sampleMobileRetailStore.RetailStore.RetailStore.Detail",
                      "data": "source:{\"filter\":\"Iteration\",\"project\":\"sampleMobileRetailStore\",\"input\":\"item1513949910675?.id\"}"
                     }'
-              ↓QueryView [mobile.components.UIDynamicAction-1513872022495]: 
+              ↓QueryView [ngx.components.UIDynamicAction-1513872022495]: 
                 beanData: |
                   '{
                    "ionBean": "FullSyncViewAction",
@@ -132,17 +134,17 @@ title: Title for Store
                    "limit": "script:20"
                   }'
                 isEnabled: false
-              ↓else [mobile.components.UIDynamicAction-1513956695375]: 
+              ↓else [ngx.components.UIDynamicAction-1513956695375]: 
                 beanData: |
                   '{
                    "ionBean": "IfAction",
                    "condition": "source:{\"filter\":\"Iteration\",\"project\":\"sampleMobileRetailStore\",\"input\":\"item1513949910675?.value?.sku\"}",
                    "negate": "plain:true"
                   }'
-                ↓PushPage [mobile.components.UIDynamicAction-1513955870639]: 
+                ↓PushPage [ngx.components.UIDynamicAction-1513955870639]: 
                   beanData: '{"ionBean":"PushPageAction","page":"plain:sampleMobileRetailStore.RetailStore.RetailStore.Store"}'
                   isEnabled: false
-                ↓AddStep [mobile.components.UICustomAction-1513953422595]: 
+                ↓AddStep [ngx.components.UICustomAction-1513953422595]: 
                   actionValue: 
                     - xmlizable: 
                       - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
@@ -152,17 +154,17 @@ title: Title for Store
                           		this.step = {name: vars.name, id: vars.id};
                           		resolve();
                           '
-                  ↓id [mobile.components.UIControlVariable-1513953553336]: 
+                  ↓id [ngx.components.UIControlVariable-1513953553336]: 
                     varValue: 
                       - xmlizable: 
-                        - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                        - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
                         - MobileSmartSourceType: source:{"filter":"Iteration","project":"sampleMobileRetailStore","input":"item1513949910675?.value?.levelId"}
-                  ↓name [mobile.components.UIControlVariable-1513953624525]: 
+                  ↓name [ngx.components.UIControlVariable-1513953624525]: 
                     varValue: 
                       - xmlizable: 
-                        - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                        - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
                         - MobileSmartSourceType: source:{"filter":"Iteration","project":"sampleMobileRetailStore","input":"item1513949910675?.value?.name"}
-                  ↓QueryView [mobile.components.UIDynamicAction-1513953845724]: 
+                  ↓QueryView [ngx.components.UIDynamicAction-1513953845724]: 
                     beanData: |
                       '{
                        "ionBean": "FullSyncViewAction",
@@ -173,7 +175,7 @@ title: Title for Store
                        "limit": "script:20"
                       }'
                     isEnabled: false
-                  ↓QueryView1 [mobile.components.UIDynamicAction-1513954430018]: 
+                  ↓QueryView1 [ngx.components.UIDynamicAction-1513954430018]: 
                     beanData: |
                       '{
                        "ionBean": "FullSyncViewAction",
@@ -183,10 +185,10 @@ title: Title for Store
                        "endkey": "script:[\"42\", c8oPage.step.id, ''~~'']",
                        "limit": "script:20"
                       }'
-            ↓CardHeader [mobile.components.UIDynamicElement-1513949910746]: 
+            ↓CardHeader [ngx.components.UIDynamicElement-1513949910746]: 
               beanData: '{"ionBean":"CardHeader"}'
               tagName: ion-card-header
-              ↓Image [mobile.components.UIDynamicElement-1513949910773]: 
+              ↓Image [ngx.components.UIDynamicElement-1513949910773]: 
                 beanData: |
                   '{
                    "ionBean": "Image",
@@ -195,18 +197,20 @@ title: Title for Store
                   }'
                 selfClose: true
                 tagName: img
-            ↓CardContent [mobile.components.UIDynamicElement-1513949910793]: 
+            ↓CardContent [ngx.components.UIDynamicElement-1513949910793]: 
               beanData: '{"ionBean":"CardContent"}'
               tagName: ion-card-content
-              ↓TextFormat [mobile.components.UIDynamicElement-1513949910814]: 
-                beanData: '{"ionBean":"TextFormat","TextCenter":"plain:text-center"}'
+              ↓FormatLayout [ngx.components.UIDynamicAttr-1643645408349]: 
+                beanData: '{"ionBean":"FormatLayout","TextAlignment":"plain:ion-text-center"}'
+                comment: FormatLayout
                 tagName: div
-                ↓Text [mobile.components.UIText-1513949910834]: 
-                  textValue: 
-                    - xmlizable: 
-                      - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-                      - MobileSmartSourceType: source:{"filter":"Iteration","project":"sampleMobileRetailStore","input":"item1513949910675?.value?.name"}
-            ↓Style [mobile.components.UIStyle-1513949911094]: 
+              ↓Text [ngx.components.UIText-1513949910834]: 
+                i18n: true
+                textValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+                    - MobileSmartSourceType: source:{"filter":"Iteration","project":"sampleMobileRetailStore","input":"item1513949910675?.value?.name"}
+            ↓Style [ngx.components.UIStyle-1513949911094]: 
               styleContent: 
                 - xmlizable: 
                   - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
@@ -215,7 +219,7 @@ title: Title for Store
                       '	height: 90%;
                       
                       '
-    ↓Style [mobile.components.UIStyle-1523364496435]: 
+    ↓Style [ngx.components.UIStyle-1523364496435]: 
       styleContent: 
         - xmlizable: 
           - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
@@ -223,8 +227,8 @@ title: Title for Store
             →: |
               '	max-width: 1024px;
               '
-↓PageEvent [mobile.components.UIPageEvent-1513870819637]: 
-  ↓QueryView [mobile.components.UIDynamicAction-1513870819648]: 
+↓PageEvent [ngx.components.UIPageEvent-1513870819637]: 
+  ↓QueryView [ngx.components.UIDynamicAction-1513870819648]: 
     beanData: |
       '{
        "ionBean": "FullSyncViewAction",

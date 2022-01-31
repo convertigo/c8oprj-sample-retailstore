@@ -1,7 +1,6 @@
 ↑default: true
 databaseName: retaildb
 ↓GetDocumentIdentifier [transactions.couchdb.GetDocumentTransaction]: 
-  accessibility: Private
   ↓Test_Case [core.TestCase]: 
     ↓_use_docid [variables.TestCaseVariable-1434123999829]: 
       description: Document ID
@@ -10,8 +9,8 @@ databaseName: retaildb
     description: Document ID
 ↓GetServerInfo [transactions.couchdb.GetServerInfoTransaction]: 
   ↑default: true
+  accessibility: Public
 ↓PostBulkDocuments [transactions.couchdb.PostBulkDocumentsTransaction]: 
-  accessibility: Private
   fullSyncAclPolicy: fromKeyC8oAcl
   ↓_id [variables.RequestableMultiValuedVariable-1433945902580]: 
     description: Documents contents
@@ -31,7 +30,6 @@ databaseName: retaildb
   ↓_c8oAcl [variables.RequestableVariable-1514274348200]: 
     description: Set the owner of the document if the "Acl Policy"="From _c8oACL variable"
 ↓ResetDatabase [transactions.couchdb.ResetDatabaseTransaction]: 
-  accessibility: Private
 ↓design [couchdb.DesignDocument]: 
   docdata: 
     →: |

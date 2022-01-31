@@ -26,16 +26,16 @@ scriptContent:
         '
 segment: Sync
 title: Title for Init1
-↓Header [mobile.components.UIDynamicElement-1513589320598]: 
+↓Header [ngx.components.UIDynamicElement-1513589320598]: 
   beanData: '{"ionBean":"Header"}'
   tagName: ion-header
-  ↓ToolBar [mobile.components.UIDynamicElement-1513589320617]: 
+  ↓ToolBar [ngx.components.UIDynamicElement-1513589320617]: 
     beanData: '{"ionBean":"ToolBar"}'
     tagName: ion-toolbar
-    ↓ButtonSet [mobile.components.UIDynamicElement-1513952178322]: 
-      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:left"}'
+    ↓ButtonSet [ngx.components.UIDynamicElement-1513952178322]: 
+      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:start"}'
       tagName: ion-buttons
-      ↓Image [mobile.components.UIDynamicElement-1513952178342]: 
+      ↓Image [ngx.components.UIDynamicElement-1513952178342]: 
         beanData: |
           '{
            "ionBean": "Image",
@@ -44,65 +44,74 @@ title: Title for Init1
           }'
         selfClose: true
         tagName: img
-    ↓BarTitle [mobile.components.UIDynamicElement-1513589320636]: 
+    ↓BarTitle [ngx.components.UIDynamicElement-1513589320636]: 
       beanData: '{"ionBean":"BarTitle"}'
       tagName: ion-title
-      ↓Text [mobile.components.UIText-1513589320680]: 
+      ↓Text [ngx.components.UIText-1513589320680]: 
+        i18n: true
         textValue: 
           - xmlizable: 
-            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
             - MobileSmartSourceType: plain:SYNCHRONIZATION
-↓Content [mobile.components.UIDynamicElement-1513589320705]: 
+↓Content [ngx.components.UIDynamicElement-1513589320705]: 
   beanData: '{"ionBean":"Content"}'
   tagName: ion-content
-  ↓TextFormat [mobile.components.UIDynamicElement-1513589320733]: 
-    beanData: '{"ionBean":"TextFormat","TextCenter":"plain:text-center"}'
+  ↓FormatLayout [ngx.components.UIDynamicAttr-1643645408327]: 
+    beanData: '{"ionBean":"FormatLayout","TextAlignment":"plain:ion-text-center"}'
+    comment: FormatLayout
     tagName: div
-    ↓Image [mobile.components.UIDynamicElement-1513589320760]: 
-      beanData: '{"ionBean":"Image","url":"plain:assets\/img\/sync.gif"}'
-      selfClose: true
-      tagName: img
-  ↓TextFormat1 [mobile.components.UIDynamicElement-1513589320787]: 
-    beanData: '{"ionBean":"TextFormat","TextCenter":"plain:text-center"}'
+  ↓Image [ngx.components.UIDynamicElement-1513589320760]: 
+    beanData: '{"ionBean":"Image","url":"plain:assets\/img\/sync.gif"}'
+    selfClose: true
+    tagName: img
+  ↓FormatLayout1 [ngx.components.UIDynamicAttr-1643645408329]: 
+    beanData: '{"ionBean":"FormatLayout","TextAlignment":"plain:ion-text-center"}'
+    comment: FormatLayout
     tagName: div
-    ↓Text [mobile.components.UIText-1513589320812]: 
+  ↓FormatLayout2 [ngx.components.UIDynamicAttr-1643645408331]: 
+    beanData: '{"ionBean":"FormatLayout","TextAlignment":"plain:ion-text-center"}'
+    comment: FormatLayout
+    tagName: div
+  ↓Paragraph [ngx.components.UIDynamicElement-1643647697843]: 
+    beanData: '{"ionBean":"Paragraph"}'
+    tagName: p
+    ↓Text [ngx.components.UIText-1513589320812]: 
+      i18n: true
       textValue: 
         - xmlizable: 
-          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
           - MobileSmartSourceType: plain:Sync the database on the client.
-  ↓TextFormat11 [mobile.components.UIDynamicElement-1513869479524]: 
-    beanData: '{"ionBean":"TextFormat","TextCenter":"plain:text-center"}'
-    tagName: div
-    ↓Text [mobile.components.UIText-1513869479550]: 
+    ↓Text1 [ngx.components.UIText-1513869479550]: 
+      i18n: true
       textValue: 
         - xmlizable: 
-          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
           - MobileSmartSourceType: script:getSyncStatus()
-↓PageEvent [mobile.components.UIPageEvent-1513589993671]: 
-  ↓IfRunningOnDevice [mobile.components.UIDynamicAction-1514554379555]: 
+↓PageEvent [ngx.components.UIPageEvent-1513589993671]: 
+  ↓IfRunningOnDevice [ngx.components.UIDynamicAction-1514554379555]: 
     beanData: '{"ionBean":"IfAction","condition":"script:window.cordova"}'
     comment: Are we running on a device or just in test mode ?
-    ↓IsNetworkKO [mobile.components.UIDynamicAction-1514554379590]: 
+    ↓IsNetworkKO [ngx.components.UIDynamicAction-1514554379590]: 
       beanData: '{"ionBean":"IfAction","condition":"script:navigator.connection.type == ''none''"}'
-      ↓RootPage [mobile.components.UIDynamicAction-1514554379620]: 
+      ↓RootPage [ngx.components.UIDynamicAction-1514554379620]: 
         beanData: '{"ionBean":"RootPageAction","page":"plain:sampleMobileRetailStore.RetailStore.RetailStore.Optimize"}'
-      ↓ToastAction [mobile.components.UIDynamicAction-1514554379663]: 
+      ↓ToastAction [ngx.components.UIDynamicAction-1514554379663]: 
         beanData: '{"ionBean":"ToastAction","message":"plain:Le réseau n''est pas disponible. L''application est en mode \"Offline\". Vous pourrez vous reconnecter à tout moment en utilisant l''option \"Synchronisation\" dans le menu."}'
-    ↓IsNetworkOK [mobile.components.UIDynamicAction-1514554379693]: 
+    ↓IsNetworkOK [ngx.components.UIDynamicAction-1514554379693]: 
       beanData: '{"ionBean":"IfAction","condition":"script:navigator.connection.type != ''none''"}'
       comment: relies on the Cordova NetworkState plugin
-      ↓SelectShop [mobile.components.UIDynamicAction-1514554528270]: 
+      ↓SelectShop [ngx.components.UIDynamicAction-1514554528270]: 
         beanData: '{"ionBean":"CallSequenceAction","requestable":"plain:sampleMobileRetailStore.select_shop"}'
         comment: login and check the remote database exists
-        ↓shopCode [mobile.components.UIControlVariable-1514554528305]: 
+        ↓shopCode [ngx.components.UIControlVariable-1514554528305]: 
           varValue: 
             - xmlizable: 
-              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
               - MobileSmartSourceType: plain:42
-        ↓If [mobile.components.UIDynamicAction-1514554528339]: 
+        ↓If [ngx.components.UIDynamicAction-1514554528339]: 
           beanData: '{"ionBean":"IfAction","condition":"script:parent.out.shopCode"}'
           comment: if the login is ok, update views
-          ↓SyncData [mobile.components.UIDynamicAction-1514554528376]: 
+          ↓SyncData [ngx.components.UIDynamicAction-1514554528376]: 
             beanData: |
               '{
                "ionBean": "FullSyncSyncAction",
@@ -110,9 +119,9 @@ title: Title for Init1
                "Direction": "plain:pull",
                "Mode": "plain:one-shot"
               }'
-            ↓RootPage [mobile.components.UIDynamicAction-1514554528410]: 
+            ↓RootPage [ngx.components.UIDynamicAction-1514554528410]: 
               beanData: '{"ionBean":"RootPageAction","page":"plain:sampleMobileRetailStore.RetailStore.RetailStore.Optimize"}'
-        ↓else [mobile.components.UIDynamicAction-1514554528446]: 
+        ↓else [ngx.components.UIDynamicAction-1514554528446]: 
           beanData: |
             '{
              "ionBean": "IfAction",
@@ -120,22 +129,22 @@ title: Title for Init1
              "negate": "plain:true"
             }'
           comment: if the login is ko, try to init the server database
-          ↓RootPage [mobile.components.UIDynamicAction-1514554528483]: 
+          ↓RootPage [ngx.components.UIDynamicAction-1514554528483]: 
             beanData: '{"ionBean":"RootPageAction","page":"plain:sampleMobileRetailStore.RetailStore.RetailStore.Init"}'
-  ↓IfRunningOnWebForTests [mobile.components.UIDynamicAction-1514554380115]: 
+  ↓IfRunningOnWebForTests [ngx.components.UIDynamicAction-1514554380115]: 
     beanData: '{"ionBean":"IfAction","condition":"script:window.cordova == undefined"}'
-    ↓SelectShop [mobile.components.UIDynamicAction-1514554392207]: 
+    ↓SelectShop [ngx.components.UIDynamicAction-1514554392207]: 
       beanData: '{"ionBean":"CallSequenceAction","requestable":"plain:sampleMobileRetailStore.select_shop"}'
       comment: login and check the remote database exists
-      ↓shopCode [mobile.components.UIControlVariable-1514554392247]: 
+      ↓shopCode [ngx.components.UIControlVariable-1514554392247]: 
         varValue: 
           - xmlizable: 
-            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
             - MobileSmartSourceType: plain:42
-      ↓If [mobile.components.UIDynamicAction-1514554392283]: 
+      ↓If [ngx.components.UIDynamicAction-1514554392283]: 
         beanData: '{"ionBean":"IfAction","condition":"script:parent.out.shopCode"}'
         comment: if the login is ok, update views
-        ↓SyncData [mobile.components.UIDynamicAction-1514554392321]: 
+        ↓SyncData [ngx.components.UIDynamicAction-1514554392321]: 
           beanData: |
             '{
              "ionBean": "FullSyncSyncAction",
@@ -143,9 +152,9 @@ title: Title for Init1
              "Direction": "plain:pull",
              "Mode": "plain:one-shot"
             }'
-          ↓RootPage [mobile.components.UIDynamicAction-1514554491063]: 
+          ↓RootPage [ngx.components.UIDynamicAction-1514554491063]: 
             beanData: '{"ionBean":"RootPageAction","page":"plain:sampleMobileRetailStore.RetailStore.RetailStore.Optimize"}'
-      ↓else [mobile.components.UIDynamicAction-1514554392395]: 
+      ↓else [ngx.components.UIDynamicAction-1514554392395]: 
         beanData: |
           '{
            "ionBean": "IfAction",
@@ -153,5 +162,5 @@ title: Title for Init1
            "negate": "plain:true"
           }'
         comment: if the login is ko, try to init the server database
-        ↓RootPage [mobile.components.UIDynamicAction-1514554450536]: 
+        ↓RootPage [ngx.components.UIDynamicAction-1514554450536]: 
           beanData: '{"ionBean":"RootPageAction","page":"plain:sampleMobileRetailStore.RetailStore.RetailStore.Init"}'
