@@ -10,8 +10,6 @@
     urlpath: http://localhost:18080/convertigo/xsd/couchdb/CouchDb.xsd
   ↓Project_reference [references.ProjectSchemaReference]: 
     projectName: mobilebuilder_tpl_8_0_0_ngx=https://github.com/convertigo/c8oprj-mobilebuilder-tpl/archive/mobilebuilder_tpl_8_0_0_ngx.zip
-  ↓Project_reference1 [references.ProjectSchemaReference]: 
-    projectName: mobilebuilder_tpl_7_9_0=https://github.com/convertigo/c8oprj-mobilebuilder-tpl/archive/mobilebuilder_tpl_7_9_0.zip
   ↓RetailStore [core.MobileApplication]: 
     applicationName: Retail Store
     ↓Android [mobileplatforms.Android]: 
