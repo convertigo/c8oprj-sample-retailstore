@@ -38,7 +38,6 @@ title: Title for Detail
       beanData: '{"ionBean":"BarTitle"}'
       tagName: ion-title
       ↓Text [ngx.components.UIText-1513875112686]: 
-        i18n: true
         textValue: 
           - xmlizable: 
             - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
@@ -80,7 +79,6 @@ title: Title for Detail
       beanData: '{"ionBean":"Label","Position":"plain:fixed"}'
       tagName: ion-label
       ↓Text [ngx.components.UIText-1513957974403]: 
-        i18n: true
         textValue: 
           - xmlizable: 
             - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
@@ -101,7 +99,6 @@ title: Title for Detail
           comment: FormatLayout
           tagName: div
         ↓Text [ngx.components.UIText-1513885761023]: 
-          i18n: true
           textValue: 
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
@@ -113,7 +110,6 @@ title: Title for Detail
         beanData: '{"ionBean":"Badge"}'
         tagName: ion-badge
         ↓Text [ngx.components.UIText-1513936012429]: 
-          i18n: true
           textValue: 
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
@@ -169,13 +165,11 @@ title: Title for Detail
           comment: FormatLayout
           tagName: div
         ↓Text [ngx.components.UIText-1513958782452]: 
-          i18n: true
           textValue: 
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
               - MobileSmartSourceType: source:{"filter":"Form","project":"sampleMobileRetailStore","input":"'x ' + form1513958913603?.controls['nb']?.value"}
         ↓Text1 [ngx.components.UIText-1513960032668]: 
-          i18n: true
           textValue: 
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
@@ -192,7 +186,6 @@ title: Title for Detail
             beanData: '{"ionBean":"Icon","IconName":"plain:basket"}'
             tagName: ion-icon
           ↓Text [ngx.components.UIText-1513960593365]: 
-            i18n: true
             textValue: 
               - xmlizable: 
                 - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType

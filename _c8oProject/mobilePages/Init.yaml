@@ -23,7 +23,6 @@ title: Title for Init
       beanData: '{"ionBean":"BarTitle"}'
       tagName: ion-title
       ↓Text [ngx.components.UIText-1513332694370]: 
-        i18n: true
         textValue: 
           - xmlizable: 
             - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
@@ -47,7 +46,6 @@ title: Title for Init
     beanData: '{"ionBean":"Paragraph"}'
     tagName: p
     ↓Text [ngx.components.UIText-1513588820796]: 
-      i18n: true
       textValue: 
         - xmlizable: 
           - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType

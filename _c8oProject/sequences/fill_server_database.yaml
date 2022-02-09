@@ -57,7 +57,7 @@ comment: initialize the server database. Automatically called by the mobile if n
             - java.lang.String: 
               - ↑value: 1433943973745
             - java.lang.String: 
-              - ↑value: ./document/value/_id
+              - ↑value: ./value/_id
     ↓imageUrl [variables.StepMultiValuedVariable-1433939689183]: 
       sourceDefinition: 
         - xmlizable: 
@@ -66,7 +66,7 @@ comment: initialize the server database. Automatically called by the mobile if n
             - java.lang.String: 
               - ↑value: 1433943973745
             - java.lang.String: 
-              - ↑value: ./document/value/imageUrl
+              - ↑value: ./value/imageUrl
     ↓leaf [variables.StepMultiValuedVariable-1433939700583]: 
       sourceDefinition: 
         - xmlizable: 
@@ -75,7 +75,7 @@ comment: initialize the server database. Automatically called by the mobile if n
             - java.lang.String: 
               - ↑value: 1433943973745
             - java.lang.String: 
-              - ↑value: ./document/value/leaf
+              - ↑value: ./value/leaf
     ↓levelId [variables.StepMultiValuedVariable-1433939713752]: 
       sourceDefinition: 
         - xmlizable: 
@@ -84,7 +84,7 @@ comment: initialize the server database. Automatically called by the mobile if n
             - java.lang.String: 
               - ↑value: 1433943973745
             - java.lang.String: 
-              - ↑value: ./document/value/levelId
+              - ↑value: ./value/levelId
     ↓levelIdFather [variables.StepMultiValuedVariable-1433939719934]: 
       sourceDefinition: 
         - xmlizable: 
@@ -93,7 +93,7 @@ comment: initialize the server database. Automatically called by the mobile if n
             - java.lang.String: 
               - ↑value: 1433943973745
             - java.lang.String: 
-              - ↑value: ./document/value/levelIdFather
+              - ↑value: ./value/levelIdFather
     ↓name [variables.StepMultiValuedVariable-1433939732982]: 
       sourceDefinition: 
         - xmlizable: 
@@ -102,7 +102,7 @@ comment: initialize the server database. Automatically called by the mobile if n
             - java.lang.String: 
               - ↑value: 1433943973745
             - java.lang.String: 
-              - ↑value: ./document/value/name
+              - ↑value: ./value/name
     ↓nameSource [variables.StepMultiValuedVariable-1433939759702]: 
       sourceDefinition: 
         - xmlizable: 
@@ -111,7 +111,7 @@ comment: initialize the server database. Automatically called by the mobile if n
             - java.lang.String: 
               - ↑value: 1433943973745
             - java.lang.String: 
-              - ↑value: ./document/value/nameSource
+              - ↑value: ./value/nameSource
     ↓position [variables.StepMultiValuedVariable-1433939769998]: 
       sourceDefinition: 
         - xmlizable: 
@@ -120,7 +120,7 @@ comment: initialize the server database. Automatically called by the mobile if n
             - java.lang.String: 
               - ↑value: 1433943973745
             - java.lang.String: 
-              - ↑value: ./document/value/position
+              - ↑value: ./value/position
     ↓shopCode [variables.StepMultiValuedVariable-1433939778278]: 
       sourceDefinition: 
         - xmlizable: 
@@ -129,7 +129,7 @@ comment: initialize the server database. Automatically called by the mobile if n
             - java.lang.String: 
               - ↑value: 1433943973745
             - java.lang.String: 
-              - ↑value: ./document/value/shopCode
+              - ↑value: ./value/shopCode
     ↓sourceBreadcrumb [variables.StepMultiValuedVariable-1433939787069]: 
       sourceDefinition: 
         - xmlizable: 
@@ -138,7 +138,7 @@ comment: initialize the server database. Automatically called by the mobile if n
             - java.lang.String: 
               - ↑value: 1433943973745
             - java.lang.String: 
-              - ↑value: ./document/value/sourceBreadcrumb
+              - ↑value: ./value/sourceBreadcrumb
     ↓_c8oAcl [variables.StepVariable-1514274361421]: 
       description: Set the owner of the document if the "Acl Policy"="From _c8oACL variable"
       sourceDefinition: 
@@ -170,7 +170,7 @@ comment: initialize the server database. Automatically called by the mobile if n
               - java.lang.String: 
                 - ↑value: 1434122432858
               - java.lang.String: 
-                - ↑value: ./document/value/_id
+                - ↑value: ./value/_id
       ↓imageUrl [variables.StepMultiValuedVariable-1433940130359]: 
         sourceDefinition: 
           - xmlizable: 
@@ -179,7 +179,7 @@ comment: initialize the server database. Automatically called by the mobile if n
               - java.lang.String: 
                 - ↑value: 1434122432858
               - java.lang.String: 
-                - ↑value: ./document/value/imageUrl
+                - ↑value: ./value/imageUrl
       ↓levelIdFather [variables.StepMultiValuedVariable-1433940130404]: 
         sourceDefinition: 
           - xmlizable: 
@@ -188,7 +188,7 @@ comment: initialize the server database. Automatically called by the mobile if n
               - java.lang.String: 
                 - ↑value: 1434122432858
               - java.lang.String: 
-                - ↑value: ./document/value/levelIdFather
+                - ↑value: ./value/levelIdFather
       ↓name [variables.StepMultiValuedVariable-1433940130410]: 
         sourceDefinition: 
           - xmlizable: 
@@ -197,7 +197,7 @@ comment: initialize the server database. Automatically called by the mobile if n
               - java.lang.String: 
                 - ↑value: 1434122432858
               - java.lang.String: 
-                - ↑value: ./document/value/name
+                - ↑value: ./value/name
       ↓packaging [variables.StepMultiValuedVariable-1433940130416]: 
         sourceDefinition: 
           - xmlizable: 
@@ -206,7 +206,7 @@ comment: initialize the server database. Automatically called by the mobile if n
               - java.lang.String: 
                 - ↑value: 1434122432858
               - java.lang.String: 
-                - ↑value: ./document/value/packaging
+                - ↑value: ./value/packaging
       ↓priceOfUnit [variables.StepMultiValuedVariable-1433940130421]: 
         sourceDefinition: 
           - xmlizable: 
@@ -215,7 +215,7 @@ comment: initialize the server database. Automatically called by the mobile if n
               - java.lang.String: 
                 - ↑value: 1434122432858
               - java.lang.String: 
-                - ↑value: ./document/value/priceOfUnit
+                - ↑value: ./value/priceOfUnit
       ↓shopCode [variables.StepMultiValuedVariable-1433940130427]: 
         sourceDefinition: 
           - xmlizable: 
@@ -224,7 +224,7 @@ comment: initialize the server database. Automatically called by the mobile if n
               - java.lang.String: 
                 - ↑value: 1434122432858
               - java.lang.String: 
-                - ↑value: ./document/value/shopCode
+                - ↑value: ./value/shopCode
       ↓sku [variables.StepMultiValuedVariable-1433940130391]: 
         sourceDefinition: 
           - xmlizable: 
@@ -233,7 +233,7 @@ comment: initialize the server database. Automatically called by the mobile if n
               - java.lang.String: 
                 - ↑value: 1434122432858
               - java.lang.String: 
-                - ↑value: ./document/value/sku
+                - ↑value: ./value/sku
       ↓unitPrice [variables.StepMultiValuedVariable-1433940130432]: 
         sourceDefinition: 
           - xmlizable: 
@@ -242,7 +242,7 @@ comment: initialize the server database. Automatically called by the mobile if n
               - java.lang.String: 
                 - ↑value: 1434122432858
               - java.lang.String: 
-                - ↑value: ./document/value/unitPrice
+                - ↑value: ./value/unitPrice
       ↓_c8oAcl [variables.StepVariable-1514274375932]: 
         description: Set the owner of the document if the "Acl Policy"="From _c8oACL variable"
         sourceDefinition: 
