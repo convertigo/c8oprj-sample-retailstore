@@ -1,38 +1,75 @@
+# Template configuration for Convertigo project CI build on GitHub Actions
+# Please consult the GitHub documentation for details about settings
+# https://docs.github.com/en/actions
+#
+# This sample assumes you have declared the following Encrypted Secrets
+# https://docs.github.com/en/actions/reference/encrypted-secrets
+#
+# C8O_SERVER: Convertigo server endpoint, where the built mobile application will connect
+#             and the backend project will be deployed, like https://<myhost>/convertigo
+# C8O_USER: Convertigo server admin or a user with role PROJECTS_CONFIG, used for the deploiment
+# C8O_PASSWORD: Convertigo server password for the C8O_USER
+#
+# Discover all tasks and -Pconvertigo options in your project build.gradle file.
+
 name: Convertigo CI
 
 # Controls when the action will run. Triggers the workflow on push or pull request
-# events but only for the ci branch
+# events but only for the master branch
 on:
   push:
     branches: [ demo ]
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
   build:
-    # The type of runner that the job will run on
     runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - name: Checkout code
-      uses: actions/checkout@v2
-    - name: Setup Java
-      uses: actions/setup-java@v1
+      uses: actions/checkout@v3
       with:
-        java-version: '11'
-    - name: Run Convertigo build
+        ssh-key: ${{ secrets.SSH_KEY }}
+    - name: Setup Java
+      uses: actions/setup-java@v3
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+    - name: Cache Gradle Dependencies
+      uses: actions/cache@v3
+      with:
+          path: |
+             ~/.gradle/caches
+             ~/.gradle/wrapper
+          key: ${{ runner.os }}-gradle-caches-v1-${{ hashFiles('**/*.gradle', '**/gradle/wrapper/gradle-wrapper.properties') }}
+          restore-keys: ${{ runner.os }}-gradle-caches-v1-
+    - name: Convertigo generate application code
+      env:
+        C8O_SERVER: ${{ secrets.C8O_SERVER_DEMO }}
+      run: |
+        echo "Generate Mobile Builder App" && \
+        sh gradlew --stacktrace --info generateMobileBuilder export -x compileMobileBuilder \
+          -Pconvertigo.load.mobileApplicationEndpoint=$C8O_SERVER
+    - name: Cache Node Modules
+      uses: actions/cache@v3
+      with:
+          path: |
+            ${{ github.workspace }}/_private/ionic/node_modules
+            ${{ github.workspace }}/_private/ionic/.angular
+            /home/runner/convertigo/nodes
+          key: ${{ runner.os }}-build-node-${{ hashFiles('**/package.json', '**/_private/ionic/version.json') }}
+          restore-keys: ${{ runner.os }}-build-node-
+    - name: Convertigo build, deploy to server and export the application
       env:
         C8O_SERVER: ${{ secrets.C8O_SERVER_DEMO }}
         C8O_USER: ${{ secrets.C8O_USER_DEMO }}
         C8O_PASSWORD: ${{ secrets.C8O_PASSWORD_DEMO }}
       run: |
-        echo "Build sampleMobileOffChat and deploy to $C8O_SERVER" && \
-        sh gradlew --stacktrace --info \
-          launchRemoteBuild \
-          deploy \
+        echo "Build, deploy to $C8O_SERVER and export to project.zip the application" && \
+        sh gradlew --stacktrace --info car deploy launchRemoteBuild -x generateMobileBuilder \
           -Pconvertigo.deploy.server=$C8O_SERVER \
           -Pconvertigo.deploy.user=$C8O_USER \
-          -Pconvertigo.deploy.password=$C8O_PASSWORD \
-          -Pconvertigo.load.mobileApplicationEndpoint=$C8O_SERVER
+          -Pconvertigo.deploy.password=$C8O_PASSWORD
+    - name: Save application project
+      uses: actions/upload-artifact@v3
+      with:
+        name: project
+        path: build/*.car

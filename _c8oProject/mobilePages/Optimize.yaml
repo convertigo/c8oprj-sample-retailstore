@@ -1,16 +1,16 @@
 comment: force views to be indexed
 segment: Optimize
 title: Title for Optimize
-↓Header [mobile.components.UIDynamicElement-1513588917715]: 
+↓Header [ngx.components.UIDynamicElement-1513588917715]: 
   beanData: '{"ionBean":"Header"}'
   tagName: ion-header
-  ↓ToolBar [mobile.components.UIDynamicElement-1513588917741]: 
+  ↓ToolBar [ngx.components.UIDynamicElement-1513588917741]: 
     beanData: '{"ionBean":"ToolBar"}'
     tagName: ion-toolbar
-    ↓ButtonSet [mobile.components.UIDynamicElement-1513952211508]: 
-      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:left"}'
+    ↓ButtonSet [ngx.components.UIDynamicElement-1513952211508]: 
+      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:start"}'
       tagName: ion-buttons
-      ↓Image [mobile.components.UIDynamicElement-1513952211526]: 
+      ↓Image [ngx.components.UIDynamicElement-1513952211526]: 
         beanData: |
           '{
            "ionBean": "Image",
@@ -19,39 +19,44 @@ title: Title for Optimize
           }'
         selfClose: true
         tagName: img
-    ↓BarTitle [mobile.components.UIDynamicElement-1513588917768]: 
+    ↓BarTitle [ngx.components.UIDynamicElement-1513588917768]: 
       beanData: '{"ionBean":"BarTitle"}'
       tagName: ion-title
-      ↓Text [mobile.components.UIText-1513588917820]: 
+      ↓Text [ngx.components.UIText-1513588917820]: 
         textValue: 
           - xmlizable: 
-            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
             - MobileSmartSourceType: plain:OPTIMIZATION
-↓Content [mobile.components.UIDynamicElement-1513588942326]: 
+↓Content [ngx.components.UIDynamicElement-1513588942326]: 
   beanData: '{"ionBean":"Content"}'
   tagName: ion-content
-  ↓TextFormat [mobile.components.UIDynamicElement-1513588942349]: 
-    beanData: '{"ionBean":"TextFormat","TextCenter":"plain:text-center"}'
+  ↓FormatLayout [ngx.components.UIDynamicAttr-1643645408338]: 
+    beanData: '{"ionBean":"FormatLayout","TextAlignment":"plain:ion-text-center"}'
+    comment: FormatLayout
     tagName: div
-    ↓Image [mobile.components.UIDynamicElement-1513588942371]: 
-      beanData: '{"ionBean":"Image","url":"plain:assets\/img\/optimize.gif"}'
-      selfClose: true
-      tagName: img
-  ↓TextFormat1 [mobile.components.UIDynamicElement-1513588942393]: 
-    beanData: '{"ionBean":"TextFormat","TextCenter":"plain:text-center"}'
+  ↓Image [ngx.components.UIDynamicElement-1513588942371]: 
+    beanData: '{"ionBean":"Image","url":"plain:assets\/img\/optimize.gif"}'
+    selfClose: true
+    tagName: img
+  ↓FormatLayout1 [ngx.components.UIDynamicAttr-1643645408340]: 
+    beanData: '{"ionBean":"FormatLayout","TextAlignment":"plain:ion-text-center"}'
+    comment: FormatLayout
     tagName: div
-    ↓Text [mobile.components.UIText-1513588942417]: 
+  ↓Paragraph [ngx.components.UIDynamicElement-1643646595232]: 
+    beanData: '{"ionBean":"Paragraph"}'
+    tagName: p
+    ↓Text [ngx.components.UIText-1513588942417]: 
       textValue: 
         - xmlizable: 
-          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
           - MobileSmartSourceType: plain:Optimizing the database for the first time.
-↓PageEvent [mobile.components.UIPageEvent-1513868209617]: 
-  ↓QueryView [mobile.components.UIDynamicAction-1513868237285]: 
+↓PageEvent [ngx.components.UIPageEvent-1513868209617]: 
+  ↓QueryView [ngx.components.UIDynamicAction-1513868237285]: 
     beanData: |
       '{
        "ionBean": "FullSyncViewAction",
        "fsview": "plain:sampleMobileRetailStore.retaildb.design.children_byFather",
        "limit": "script:2"
       }'
-    ↓RootPage [mobile.components.UIDynamicAction-1514554568956]: 
+    ↓RootPage [ngx.components.UIDynamicAction-1514554568956]: 
       beanData: '{"ionBean":"RootPageAction","page":"plain:sampleMobileRetailStore.RetailStore.RetailStore.Store"}'

@@ -7,7 +7,7 @@ buildscript {
 		jcenter()
 	}
 	dependencies {
-		classpath 'com.convertigo:gradle-plugin:7.9.0-SNAPSHOT'
+		classpath 'com.convertigo:gradle-plugin:8.0.2-SNAPSHOT'
 	}
 }
 
@@ -232,4 +232,4 @@ if (!tasks.findByName('wrapper')) {
 		description 'Generates Gradle wrapper files.'
 	}
 }
-wrapper.gradleVersion = '6.7.1'
+wrapper.gradleVersion = '7.3.3'
