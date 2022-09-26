@@ -4,10 +4,11 @@ buildscript {
 		maven {
 			url "https://m2.convertigo.com"
 		}
-		jcenter()
+		mavenCentral()
 	}
 	dependencies {
-		classpath 'com.convertigo:gradle-plugin:8.0.2-SNAPSHOT'
+		classpath 'org.eclipse.jgit:org.eclipse.jgit.ssh.jsch:[5.4,)'
+		classpath 'com.convertigo:gradle-plugin:8.1.0-SNAPSHOT'
 	}
 }
 
@@ -99,17 +100,21 @@ car {
 }
 
 //// the 'deploy' task depends on 'car' and allows to push the project to a Convertigo server
+//// the task is auto skipped if properties are empties, following tasks can check deploy.state.didWork
 deploy {
 	//// deploy the current project to <server> using user/password credentials
 	//// can also be configured with a -Pconvertigo.deploy.server as Gradle parameter
+	//// Note: the task is skipped if the property doesn't start with http
 	// server 'https://myserver.com/convertigo'
 	
 	//// user used by the deploy action, default is 'admin'
 	//// can also be configured with a -Pconvertigo.deploy.user as Gradle parameter
+	//// Note: the task is skipped if the property is empty
 	// user 'admin'
 	
 	//// password used by the deploy action, default is 'admin'
 	//// can also be configured with a -Pconvertigo.deploy.password as Gradle parameter
+	//// Note: the task is skipped if the property is empty
 	// user 'password'
 	
 	//// deploy over an https <server> without checking certificates, default is false
@@ -170,7 +175,8 @@ localBuild {
 		dependsOn compileMobileBuilder
 	}
 	
-	//// list platforms to build
+	//// set an array of platforms (Convertigo Platforms object) names to build, empty means all declared platforms
+	//// can also be configured with a -Pconvertigo.localBuild.platforms as Gradle parameter (names separated by comma)
 	// platforms = []
 	
 	//// build mode of the native package, can be 'release' or 'debug' (default)
@@ -232,4 +238,4 @@ if (!tasks.findByName('wrapper')) {
 		description 'Generates Gradle wrapper files.'
 	}
 }
-wrapper.gradleVersion = '7.3.3'
+wrapper.gradleVersion = '7.5.1'
