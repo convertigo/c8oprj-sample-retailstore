@@ -93,7 +93,12 @@ title: Title for Init1
       ↓RootPage [ngx.components.UIDynamicAction-1514554379620]: 
         beanData: '{"ionBean":"RootPageAction","page":"plain:sampleMobileRetailStore.RetailStore.RetailStore.Optimize"}'
       ↓ToastAction [ngx.components.UIDynamicAction-1514554379663]: 
-        beanData: '{"ionBean":"ToastAction","message":"plain:Le réseau n''est pas disponible. L''application est en mode \"Offline\". Vous pourrez vous reconnecter à tout moment en utilisant l''option \"Synchronisation\" dans le menu."}'
+        beanData: |
+          '{
+           "ionBean": "ToastAction",
+           "message": "plain:Le réseau n''est pas disponible. L''application est en mode \"Offline\". Vous pourrez vous reconnecter à tout moment en utilisant l''option \"Synchronisation\" dans le menu.",
+           "cssClass": "plain:"
+          }'
     ↓IsNetworkOK [ngx.components.UIDynamicAction-1514554379693]: 
       beanData: '{"ionBean":"IfAction","condition":"script:navigator.connection.type != ''none''"}'
       comment: relies on the Cordova NetworkState plugin

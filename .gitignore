@@ -6,7 +6,11 @@
 /DisplayObjects/mobile/*
 !/DisplayObjects/mobile/assets
 
+/Flasupdate/
+
 /oas2/
 /oas3/
 
 /build/
+
+.DS_Store

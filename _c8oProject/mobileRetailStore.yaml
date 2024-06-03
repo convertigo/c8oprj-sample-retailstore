@@ -18,7 +18,7 @@ componentScriptContent:
         	/*End_c8o_AppFunction*/
         
 isPWA: true
-tplProjectName: mobilebuilder_tpl_8_1_0_ngx
+tplProjectName: mobilebuilder_tpl_8_3_0_ngx
 ↓Sync [ngx.components.PageComponent-1513589320518]: 🗏 mobilePages/Sync.yaml
 ↓Init [ngx.components.PageComponent-1513331579533]: 🗏 mobilePages/Init.yaml
 ↓Optimize [ngx.components.PageComponent-1513588905087]: 🗏 mobilePages/Optimize.yaml

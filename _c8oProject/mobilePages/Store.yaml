@@ -90,7 +90,7 @@ title: Title for Store
                 - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
                 - MobileSmartSourceType: source:{"filter":"Iteration","project":"sampleMobileRetailStore","input":"item1513954909887.id"}
   ↓Grid [ngx.components.UIDynamicElement-1513949910628]: 
-    beanData: '{"ionBean":"Grid"}'
+    beanData: '{"ionBean":"Grid","Height":"plain:100%"}'
     tagName: ion-grid
     ↓GridRow [ngx.components.UIDynamicElement-1513949910654]: 
       beanData: '{"ionBean":"GridRow"}'

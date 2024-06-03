@@ -155,6 +155,8 @@ title: Title for Detail
             '{
              "ionBean": "Range",
              "ControlName": "plain:nb",
+             "DoubleBinding": "script",
+             "Debounce": "plain:0",
              "Max": "plain:10",
              "Value": "plain:1"
             }'
@@ -192,7 +194,12 @@ title: Title for Detail
                 - MobileSmartSourceType: plain:ajouter au panier
           ↓Event [ngx.components.UIControlEvent-1513961280962]: 
             ↓Toast [ngx.components.UIDynamicAction-1513961288556]: 
-              beanData: '{"ionBean":"ToastAction","message":"plain:Demo sans panier"}'
+              beanData: |
+                '{
+                 "ionBean": "ToastAction",
+                 "message": "plain:Demo sans panier",
+                 "cssClass": "plain:"
+                }'
       ↓Style [ngx.components.UIStyle-1513961720035]: 
         styleContent: 
           - xmlizable: 
