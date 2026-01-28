@@ -89,7 +89,7 @@ title: Title for Init1
     beanData: '{"ionBean":"IfAction","condition":"script:window.cordova"}'
     comment: Are we running on a device or just in test mode ?
     ↓IsNetworkKO [ngx.components.UIDynamicAction-1514554379590]: 
-      beanData: '{"ionBean":"IfAction","condition":"script:navigator.connection.type == ''none''"}'
+      beanData: '{"ionBean":"IfAction","condition":"script:this[''navigator''].connection.type == ''none''"}'
       ↓RootPage [ngx.components.UIDynamicAction-1514554379620]: 
         beanData: '{"ionBean":"RootPageAction","page":"plain:sampleMobileRetailStore.RetailStore.RetailStore.Optimize"}'
       ↓ToastAction [ngx.components.UIDynamicAction-1514554379663]: 
@@ -100,7 +100,7 @@ title: Title for Init1
            "cssClass": "plain:"
           }'
     ↓IsNetworkOK [ngx.components.UIDynamicAction-1514554379693]: 
-      beanData: '{"ionBean":"IfAction","condition":"script:navigator.connection.type != ''none''"}'
+      beanData: '{"ionBean":"IfAction","condition":"script:this[''navigator''].connection.type != ''none''"}'
       comment: relies on the Cordova NetworkState plugin
       ↓SelectShop [ngx.components.UIDynamicAction-1514554528270]: 
         beanData: '{"ionBean":"CallSequenceAction","requestable":"plain:sampleMobileRetailStore.select_shop"}'

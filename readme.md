@@ -31,13 +31,13 @@ For more technical informations : [documentation](./project.md)
      <tr><td>To contribute</td><td>
 
      ```
-     sampleMobileRetailStore=git@github.com:convertigo/c8oprj-sample-retailstore.git:branch=beta
+     sampleMobileRetailStore=git@github.com:convertigo/c8oprj-sample-retailstore.git:branch=main
      ```
      </td></tr>
      <tr><td>To simply use</td><td>
 
      ```
-     sampleMobileRetailStore=git@github.com:convertigo/c8oprj-sample-retailstore/archive/beta.zip
+     sampleMobileRetailStore=git@github.com:convertigo/c8oprj-sample-retailstore/archive/main.zip
      ```
      </td></tr>
     </table>

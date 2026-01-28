@@ -1,15 +1,15 @@
-↑convertigo: 8.0.0.m006
+↑convertigo: 8.4.0.m006
 ↓sampleMobileRetailStore [core.Project]: 
   comment: FullSync "Retail store" mobile sample
   contextTimeout: 7000
-  version: 8.3.0
+  version: 8.4.0
   ↓retaildb [connectors.FullSyncConnector]: 🗏 connectors/retaildb.yaml
   ↓fill_server_database [sequences.GenericSequence]: 🗏 sequences/fill_server_database.yaml
   ↓select_shop [sequences.GenericSequence]: 🗏 sequences/select_shop.yaml
   ↓CouchDb_schema [references.ImportXsdSchemaReference]: 
     urlpath: http://localhost:18080/convertigo/xsd/couchdb/CouchDb.xsd
-  ↓project [references.ProjectSchemaReference]: 
-    projectName: mobilebuilder_tpl_8_3_0_ngx=https://github.com/convertigo/c8oprj-mobilebuilder-tpl/archive/mobilebuilder_tpl_8_3_0_ngx.zip
+  ↓project1 [references.ProjectSchemaReference]: 
+    projectName: mobilebuilder_tpl_8_4_0_ngx=https://github.com/convertigo/c8oprj-mobilebuilder-tpl/archive/mobilebuilder_tpl_8_4_0_ngx.zip
   ↓RetailStore [core.MobileApplication]: 
     applicationBgColor: '#338166'
     applicationName: Retail Store
